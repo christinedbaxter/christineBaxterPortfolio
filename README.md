@@ -1,6 +1,18 @@
 # 02 Advanced CSS: Portfolio
 Challenge 2, Advanced CSS Professional Portfolio
 
+## Table of Contents
+[Description](#description) <br />
+[User Story](#user-story) <br />
+[Acceptance Criteria](#acceptance-criteria) <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[- General](#general) <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[- Technical](#technical) <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[- Quality](#quality) <br />
+[Review/Deployment](#reviewdeployment) <br />
+[Usage](#usage) <br />
+[Mock-Up](#mock-up) <br />
+[Credits](#credits) <br />
+
 ## Description
 
 A portfolio of work can showcase your skills and talents to employers looking to fill a part-time or full-time position. An effective portfolio highlights your strongest work as well as the thought processes behind it. Students who have portfolios with deployed web applications (meaning they are live on the web) are typically very successful in their career search after the boot camp. This last point can’t be stressed enough: at many companies, having several deployed projects is a minimum requirement to receive an initial interview. 
