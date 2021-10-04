@@ -21,6 +21,8 @@ This weeks Challenge will assist Coding Bootcamp student's by setting them up fo
 
 **Note**: If needed, use placeholder images and names as these can be updated later in the course.
 
+[back to top](#table-of-contents)
+
 ## User Story
 
 ```
@@ -28,6 +30,8 @@ AS AN employer
 I WANT to view a potential employee's deployed portfolio of work samples
 SO THAT I can review samples of their work and assess whether they're a good candidate for an open position
 ```
+[back to top](#table-of-contents)
+
 ## Acceptance Criteria
 ### General
 
@@ -46,7 +50,7 @@ THEN I am taken to that deployed application
 WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport
 ```
-
+[back to top](#table-of-contents)
 ### Technical
 
 * Application deployed at live URL.
@@ -54,6 +58,7 @@ THEN I am presented with a responsive layout that adapts to my viewport
 * Application GitHub URL submitted.
 * GitHub repository contains application code.
 
+[back to top](#table-of-contents)
 ### Quality
 
 * Application resembles the mock-up functionality provided in the Challenge instructions.
@@ -63,6 +68,7 @@ THEN I am presented with a responsive layout that adapts to my viewport
 * Repository contains multiple descriptive commit messages.
 * Repository contains quality readme with description, screenshot, link to deployed application.
 
+[back to top](#table-of-contents)
 ## Review/Deployment
 
 You are required to submit BOTH of the following for review:
@@ -71,6 +77,7 @@ You are required to submit BOTH of the following for review:
 
 * GitHub Repository: &nbsp; [GitHub Repository URL](https://github.com/baxters4karma/portfolio)
 
+[back to top](#table-of-contents)
 ## Usage
 Student will use this website to showcase their skills, talents, and projects to employers. As the course progresses, the student will update with new/existing projects.
 
@@ -79,16 +86,19 @@ Please note this website was designed with a mobile-first mindset and uses the f
 * Tablets (max-width = 768px)
 * Desktops (ax-width = 980px)
 
+[back to top](#table-of-contents)
 ## Mock-Up
 Animation showing the web application's appearance and functionality:
 
 ![portfolio demo](./assets/images/02-advanced-css-homework-demo.gif)
 
+[back to top](#table-of-contents)
 ## Credits
 
 * Module 2: Advanced CSS Bootcampspot Material
 * Module 2: Class Activities
 * [Module 2 Advanced CSS Challenge: Professional Portfolio](https://courses.bootcampspot.com/courses/798/assignments/17671?module_item_id=306256)
 
+[back to top](#table-of-contents)
 - - -
 © 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
