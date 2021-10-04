@@ -2,15 +2,15 @@
 Challenge 2, Advanced CSS Professional Portfolio
 
 ## Table of Contents
-[Description](#description) <br />
-[User Story](#user-story) <br />
-[Acceptance Criteria](#acceptance-criteria) <br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[- General](#general) <br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[- Technical](#technical) <br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[- Quality](#quality) <br />
-[Review/Deployment](#reviewdeployment) <br />
-[Usage](#usage) <br />
-[Mock-Up](#mock-up) <br />
+[Description](#description) | 
+[User Story](#user-story) | 
+[Acceptance Criteria](#acceptance-criteria): 
+&nbsp;[General](#general), 
+&nbsp;[Technical](#technical), 
+&nbsp;[Quality](#quality) | 
+[Review/Deployment](#reviewdeployment) | 
+[Usage](#usage) | 
+[Mock-Up](#mock-up) | 
 [Credits](#credits) <br />
 
 ## Description
