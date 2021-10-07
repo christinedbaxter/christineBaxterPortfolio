@@ -170,6 +170,11 @@ section {
     justify-content: space-around;
 }
 
+.proPic {
+    float:left;
+    padding-right: 5px;
+}
+
 .content-text ul a li {
     padding: 30px 35px;
     
