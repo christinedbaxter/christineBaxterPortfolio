@@ -1,0 +1,174 @@
+:root {
+    --primary-color: #C0C0C0;
+    --secondary-color: #191970;
+    --tertiary-color: #000000;
+    --color-block-text: #00BFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+/* apply styles to <body> */
+    color: var(--tertiary-color);
+    font-family: Helvetica, Arial, sans-serif;    
+}
+
+/* apply styles to <header> */
+header {
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px 35px;
+    background-color: transparent;
+    position: -webkit-sticky;
+    position: sticky;    
+    top: 0;
+    background-image: url("../images/codingLaptopScreen.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
+    z-index: 9999;
+}
+
+header h1 {
+    font-weight: bold;
+    margin: 0;
+    font-size: 34px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: var(--color-block-text);
+}
+
+header h1 a {
+    text-decoration: none;
+    color: var(--tertiary-color);
+}
+
+header nav {
+    margin: 7px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.5vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: var(--primary-color);
+}
+
+header nav ul li a:hover {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 15px;
+    text-shadow: none;
+}
+
+.primary-border {
+    border-color: var(--primary-color);
+}
+
+.secondary-border {
+    border-color: var(--tertiary-color);
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: var(--primary-color);
+    width: 100%;
+    padding: 40px 35px;
+}
+
+footer h2 {
+    color: var(--secondary-color);
+    font-size: 30px;
+    margin: 0;
+}
+
+footer div {
+    line-height: 1.5;
+    text-align: right;
+}
+
+footer a {
+    color: var(--secondary-color);
+}
+
+section {
+    padding: 60px 60px 5px 60px;
+}
+
+.flex-row {
+    display: flex;
+}
+
+/* Hero Style Start */
+.hero {
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+    background-image: url("../images/codingLaptopScreen.png");
+    background-size: cover;
+    background-position: center;
+    align-items: flex-start;
+    background-attachment: fixed;
+    background-position: 80%;
+    background-color: var(--color-block-text);
+}
+/* Hero Style End */
+
+.hero-subtitle {
+    width: 12%;
+    text-align: center;
+    margin: .5%;
+    line-height: 1.2;
+}
+
+.hero-subtitle h2 {
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: var(--color-block-text);
+    font-size: 30px;
+}
+
+.content {
+    background: var(--primary-color);
+    margin: 0 auto;
+    margin: 50px auto;
+    padding-bottom: 50px;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.content-title {
+
+}
+
+.content-text {
+
+}
+
+.content-part-title {
+
+}
+
+.content-part-img {
+
+}
+
+
