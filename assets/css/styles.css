@@ -168,7 +168,13 @@ section {
     margin: 15px auto;
     padding-bottom: 50px;
     display: flex;
+    flex-flow: row wrap;
+}
+
+.contactList {
+    display: flex;
     flex-flow: wrap;
+    justify-content: space-around;
 }
 
 .proPic {
@@ -177,9 +183,16 @@ section {
     padding-right: 5px;
 }
 
-.content-text ul a li {
-    font-size: larger;
+.content-text ul {
+    display: flex;
+    flex-flow: wrap;
     list-style: none;
+
+}
+
+.content-text ul li a {
+    font-size: larger;
+    justify-content: space-around;
 }
 
 .content-part {
@@ -224,4 +237,75 @@ section {
     height: 100%;
 }
 
-/*//MEDIA QUERIES FOR RESPONSIVE
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+
+    header h1, header h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+
+    footer h2, footer div {
+        text-align: center;
+        width: 100%;
+    }
+
+    .hero-subtitle, .hero-form {
+        width: 100%;
+    }
+
+    .hero-subtitle {
+        text-align: center;
+    }
+
+    .section-title {
+        width: 80%;
+    }
+
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+    section {
+        padding: 30px 15px;
+    }
+
+    .content-part-img h3 {
+        flex: 1 100%;
+        text-align: center;
+    }
+
+    .content-text {
+        flex: 2 100%;
+        text-align: center;
+        justify-content: center;
+   }
+
+   .content-text ul li a{
+    font-size: medium;
+   }
+
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+    .section-title {
+        width: 95%;
+    }
+
+}
