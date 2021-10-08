@@ -14,7 +14,7 @@
 body {
 /* apply styles to <body> */
     color: var(--tertiary-color);
-    font-family: Helvetica, Arial, sans-serif;    
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 /* apply styles to <header> */
@@ -25,7 +25,7 @@ header {
     padding: 30px 35px;
     background-color: transparent;
     position: -webkit-sticky;
-    position: sticky;    
+    position: sticky;
     top: 0;
     background-image: url("../images/cloudRainingLaptop.png");
     background-size: cover;
@@ -167,34 +167,28 @@ section {
     background: var(--primary-color);
     margin: 15px auto;
     padding-bottom: 50px;
-    align-items: stretch;
-    justify-content: space-around;
-    align-content: space-between;
+    display: flex;
+    flex-flow: wrap;
 }
 
 .proPic {
+    display: block;
     float:left;
     padding-right: 5px;
 }
 
 .content-text ul a li {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    flex-flow: column;
-    padding: 30px 35px;
-    
     font-size: larger;
     list-style: none;
 }
 
 .content-part {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat(5, auto);
-    gap: 10px;
-    align-content: space-around;
-    justify-content: space-between;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
 
 .box1 {
@@ -204,39 +198,30 @@ section {
     grid-row-end: 5;
 }
 
-.box2 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 5;
-}
-
-.content-part-title {
-    text-align: center;
-    box-sizing: content-box;
-    position: relative;
-    background-color: var(--color-block-text);
-    z-index: 3;
-}
-
 .content-part-img {
-    flex: 1 12%;
+    flex: 1 25em;
     margin-right: 10px;
-    position: relative;    
+    padding: 5px;
+}
+
+.content-part-img:nth-of-type(1) {
+    flex: 65%;
 }
 
 .text-block {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    line-height: 1.5;
+    font-size: x-small;
+    position: relative;
+    bottom: 65px;
+    left: 0px;
+    margin-right: 65%;
+    line-height: 1.25;
     background-color: var(--color-block-text);
-    padding: 10px;
+    padding: 5px;
 }
 
 .content-part-img img {
-    max-width: 100%;
+    width: 100%;
+    height: 100%;
 }
 
-
-
+/*//MEDIA QUERIES FOR RESPONSIVE
