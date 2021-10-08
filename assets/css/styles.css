@@ -114,6 +114,7 @@ section {
 
 .flex-row {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
 }
 
@@ -166,8 +167,9 @@ section {
     background: var(--primary-color);
     margin: 15px auto;
     padding-bottom: 50px;
-    align-items: center;
+    align-items: stretch;
     justify-content: space-around;
+    align-content: space-between;
 }
 
 .proPic {
@@ -176,6 +178,10 @@ section {
 }
 
 .content-text ul a li {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-flow: column;
     padding: 30px 35px;
     
     font-size: larger;
@@ -216,25 +222,16 @@ section {
 .content-part-img {
     flex: 1 12%;
     margin-right: 10px;
-    box-sizing: border-box;
-    position: relative;
-    text-align: center;
-    background-color: var(--color-block-text);
-    color: var(--tertiary-color);
+    position: relative;    
+}
+
+.text-block {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
     line-height: 1.5;
-}
-
-.bottom-left-line-1 {
-    position: absolute;
-    bottom: 8px;
-    left: 16px;
-}
-
-.bottom-left-line-2 {
-    position: absolute;
-    bottom: 10px;
-    left: 16px;
-    padding-bottom: 10px;
+    background-color: var(--color-block-text);
+    padding: 10px;
 }
 
 .content-part-img img {
