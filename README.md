@@ -81,9 +81,9 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 You are required to submit BOTH of the following for review:
 
-- Deployed Application: &nbsp; [Live URL](https://christinedbaxter.github.io/portfolio/)
+- Deployed Application: &nbsp; [Live URL](https://christinedbaxter.github.io/christineBaxterPortfolio/)
 
-- GitHub Repository: &nbsp; [GitHub Repository URL](https://github.com/christinedbaxter/portfolio)
+- GitHub Repository: &nbsp; [GitHub Repository URL](https://github.com/christinedbaxter/christineBaxterportfolio)
 
 [back to top](#table-of-contents)
 
