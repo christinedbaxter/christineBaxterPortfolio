@@ -455,7 +455,7 @@ blockquote p::after {
 	}
 
 	.content-text-proPic p {
-		text-align: center;
+		text-align: left;
 	}
 
 	.content-text {
