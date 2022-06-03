@@ -1,6 +1,6 @@
 # 02 Advanced CSS: Portfolio
 
-Challenge 2, Advanced CSS Professional Portfolio
+Advanced CSS Professional Portfolio
 
 ## Table of Contents
 
@@ -17,11 +17,11 @@ Challenge 2, Advanced CSS Professional Portfolio
 
 ## Description
 
-A portfolio of work can showcase your skills and talents to employers looking to fill a part-time or full-time position. An effective portfolio highlights your strongest work as well as the thought processes behind it. Students who have portfolios with deployed web applications (meaning they are live on the web) are typically very successful in their career search after the boot camp. This last point can’t be stressed enough: at many companies, having several deployed projects is a minimum requirement to receive an initial interview.
+A portfolio of work showcasing my skills and talents to potential employers looking to fill an apprenticeship, intern, or full-time position. An effective portfolio highlights a persons strongest work as well as the thought processes behind that work. Please note this portfolio contains insight into me and who I am as a professional (About Me), web development projects I built during a full-stack web development course (Projects), data spreadsheets and analysis papers written during my MBA journey (Coursework), my contact details, and link to various resumes.
 
-This weeks Challenge will assist Coding Bootcamp student's by setting them up for future success as they apply the recently learned core skills: flexbox, media queries, and CSS variables. This project will provide students the ability to practice these newly acquired skills while creating something that can be used during a job search.
+Students who have portfolios with deployed web applications (meaning they are live on the web) and current coursework are typically very successful in their career searching. With many companies, having several deployed projects is a minimum requirement to receive an initial interview.
 
-**Note**: If needed, use placeholder images and names as these can be updated later in the course.
+This portfolio project covered core web development skills such as flexbox, media queries, javascript, and CSS variables. This project also provided the ability to practice these newly acquired skills while creating something that can be used during a job search.
 
 [back to top](#table-of-contents)
 
@@ -47,8 +47,6 @@ WHEN I click one of the links in the navigation
 THEN the UI scrolls to the corresponding section
 WHEN I click on the link to the section about their work
 THEN the UI scrolls to a section with titled images of the developer's applications
-WHEN I am presented with the developer's first application
-THEN that application's image should be larger in size than the others
 WHEN I click on the images of the applications
 THEN I am taken to that deployed application
 WHEN I resize the page or view the site on various screens and devices
@@ -89,7 +87,7 @@ You are required to submit BOTH of the following for review:
 
 ## Usage
 
-Student will use this website to showcase their skills, talents, and projects to employers. As the course progresses, the student will update with new/existing projects.
+This website will be used to showcase skills, talents, and projects to employers.
 
 Please note this website was designed with a mobile-first mindset and uses the following media queries for responsive display on mobile phones, tablets, and desktop screens:
 
