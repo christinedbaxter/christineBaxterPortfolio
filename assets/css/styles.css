@@ -375,6 +375,8 @@ blockquote p::after {
 
 	header nav ul li a {
 		font-size: 20px;
+		font-weight: bold;
+		text-shadow: none;
 		color: var(--tertiary-color);
 	}
 
