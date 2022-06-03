@@ -239,7 +239,8 @@ section {
 }
 
 .classDetail-content {
-	justify-content: space-around;
+	display: grid;
+	grid-template-columns: 75% 25%;
 }
 
 .classDetail h4 {
@@ -254,15 +255,24 @@ section {
 .classDetail-content h5 {
 	font-size: medium;
 	font-weight: normal;
-	text-align: center;
+	text-align: left;
 	padding: 0.25ch;
+	text-decoration: underline;
 }
 
-.classDetail ol,
-.classDetail p {
+.classDetail ol {
 	padding: 0.5ch;
 	margin-left: 2ch;
 	text-align: left;
+}
+
+.classDetail p {
+	padding: 0.5ch;
+	text-align: left;
+}
+
+.classDetail-files a {
+	text-decoration: none;
 }
 
 .collapsible:after {
@@ -375,9 +385,8 @@ blockquote p::after {
 
 	header nav ul li a {
 		font-size: 20px;
-		font-weight: bold;
-		text-shadow: none;
-		color: var(--tertiary-color);
+		font-weight: normal;
+		text-shadow: 0 0 10px rgb(0 0 0 / 100%);
 	}
 
 	footer h2,
@@ -473,10 +482,14 @@ blockquote p::after {
 
 	.classDetail h4 {
 		height: 75px;
-		-ms-flex-align: center;
 	}
 
 	.chip {
 		font-size: small;
+	}
+
+	.classDetail-content {
+		display: flex;
+		flex: 1;
 	}
 }
