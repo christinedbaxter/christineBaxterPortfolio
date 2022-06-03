@@ -90,7 +90,7 @@ footer {
 	flex-wrap: wrap;
 	background: var(--primary-color);
 	width: 100%;
-	padding: 40px 35px;
+	padding: 25px 35px;
 }
 
 footer h2 {
@@ -146,19 +146,12 @@ section {
 	font-size: 20px;
 }
 
-.hero-subtitle h3 {
-	width: 100%;
-	text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-	background-color: var(--color-block-text);
-	font-size: 15px;
-}
-
 .content {
 	background: var(--primary-color);
 	margin: 0 auto;
 	display: grid;
 	grid-template-columns: 195px 1fr;
-	grid-template-rows: repeat(5, auto);
+	grid-template-rows: repeat(2, auto);
 	gap: 10px;
 	align-content: space-around;
 	justify-content: space-between;
@@ -172,90 +165,27 @@ section {
 
 .content-text {
 	background: var(--primary-color);
-	margin: 15px auto;
-	padding-bottom: 50px;
 	display: flex;
 	flex-flow: row wrap;
-}
-
-.content-text .content-text-hdr {
-	display: block;
-}
-
-/* .content-table {
-	display: grid;
-	grid-template-columns: 0.2fr 0.75fr 0.5fr 1.5fr;
-} */
-
-.content-text .content-table ul {
-	display: block;
-}
-
-/* spacing */
-
-table {
-	table-layout: fixed;
-	width: 100%;
-	border-collapse: collapse;
-	border: none;
-}
-
-thead th:nth-child(1) {
-	width: 35%;
-}
-
-thead th:nth-child(2) {
-	width: 15%;
-}
-
-thead th:nth-child(3) {
-	width: 50%;
-}
-
-/* thead th:nth-child(4) {
-	width: 35%;
-} */
-
-th,
-td {
-	padding: 20px;
-}
-
-.contactList {
-	display: flex;
-	flex-flow: wrap;
-	justify-content: space-around;
+	align-content: center;
 }
 
 .proPic {
 	display: block;
 	float: left;
 	padding-right: 5px;
+	padding-top: 0.7ch;
 }
 
-.content-table ul {
-	display: block;
-}
-
-.content-table ul li {
-	list-style-type: circle;
-}
-
-.content-text ul {
-	display: flex;
-	flex-flow: wrap;
-	list-style: none;
-}
-
-.content-text ul li a {
-	font-size: larger;
-	justify-content: space-around;
+.content-text-proPic p {
+	margin-left: 0;
+	padding: 0.5ch;
 }
 
 .content-part {
 	display: flex;
 	flex-flow: row wrap;
-	justify-content: space-around;
+	justify-content: center;
 	padding: 0;
 	margin: 0;
 	list-style: none;
@@ -274,19 +204,108 @@ td {
 	padding: 5px;
 }
 
-/* .content-part-img:nth-of-type(1) {
-	flex: 20%;
-} */
+.flex-col {
+	display: flex;
+	flex-direction: column;
+	flex: 2;
+}
+
+.classInfo {
+	margin: 0;
+	padding: 1ch;
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+	display: block;
+	background-color: var(--color-block-text);
+	color: var(--tertiary-color);
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: large;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.classDetail {
+	font-size: medium;
+	padding: 0 18px;
+	display: none;
+	overflow: hidden;
+	background-color: #f1f1f1;
+}
+
+.classDetail-content {
+	justify-content: space-around;
+}
+
+.classDetail h4 {
+	background-color: var(--color-block-text);
+	color: var(--tertiary-color);
+	width: 100%;
+	height: 30px;
+	text-align: center;
+	padding-top: 5px;
+}
+
+.classDetail-content h5 {
+	font-size: medium;
+	font-weight: lighter;
+	text-align: center;
+	padding: 0.25ch;
+}
+
+.classDetail ol,
+.classDetail p {
+	padding: 0.5ch;
+	margin-left: 2ch;
+	text-align: left;
+}
+
+.collapsible:after {
+	content: "\02795"; /* Unicode character for "plus" sign (+) */
+	font-size: 13px;
+	color: #777;
+	float: left;
+	margin-left: 5px;
+}
+
+.active:after {
+	content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.collapsible:hover {
+	background-color: #ccc;
+}
+
+.contactList {
+	justify-content: space-around;
+}
+
+.contactList ul,
+.resumeList ul {
+	list-style-type: none;
+}
 
 .text-block {
 	font-size: x-small;
 	position: relative;
 	bottom: 65px;
 	left: 0px;
-	margin-right: 45%;
+	margin: 5%;
 	line-height: 1.25;
 	background-color: var(--color-block-text);
 	padding: 5px;
+}
+
+.text-block h3,
+.text-block p {
+	text-align: center;
 }
 
 .content-part-img img {
@@ -314,6 +333,24 @@ blockquote p::before {
 
 blockquote p::after {
 	content: "\201D";
+}
+
+.chip {
+	display: inline-block;
+	padding: 0 15px;
+	height: 50px;
+	font-size: medium;
+	line-height: 50px;
+	border-radius: 25px;
+	background-color: #f1f1f1;
+}
+
+.chip img {
+	float: left;
+	margin: 0 10px 0 -25px;
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
 }
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
@@ -358,6 +395,10 @@ blockquote p::after {
 	.section-title {
 		width: 80%;
 	}
+
+	.chip {
+		margin: 1ch;
+	}
 }
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
@@ -380,11 +421,59 @@ blockquote p::after {
 	.content-text ul li a {
 		font-size: medium;
 	}
+
+	.chip {
+		margin: 1ch;
+	}
 }
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
 	.section-title {
 		width: 95%;
+	}
+
+	section {
+		padding: 30px 15px;
+	}
+
+	.content {
+		grid-template-columns: none;
+	}
+
+	.content-title {
+		border-bottom: 3px solid;
+		border-right: none;
+	}
+
+	.content-title h2 {
+		text-align: center;
+	}
+
+	.proPic {
+		align-self: center;
+	}
+
+	.content-text-proPic p {
+		text-align: center;
+	}
+
+	.content-text {
+		flex: 2 100%;
+		text-align: center;
+		justify-content: center;
+	}
+
+	.content-text ul li a {
+		font-size: small;
+	}
+
+	.classDetail h4 {
+		height: 75px;
+		-ms-flex-align: center;
+	}
+
+	.chip {
+		font-size: small;
 	}
 }
