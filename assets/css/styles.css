@@ -24,15 +24,18 @@ header {
 	flex-wrap: wrap;
 	padding: 15px 15px;
 	background-color: transparent;
-	position: -webkit-sticky;
-	position: sticky;
-	top: 0;
 	background-image: url("../images/dataAnalyticsBackGround.png");
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
-	background-position: 90%;
+	background-position: center;
 	z-index: 9999;
+}
+
+.sticky {
+	/* Styles for the sticky header */
+	position: sticky;
+	top: 0;
 }
 
 header h1 {
@@ -87,6 +90,13 @@ header nav ul li a {
 	align-self: center;
 }
 
+header nav ul li a[data-hs-anchor="true"] {
+	display: block;
+	position: relative;
+	visibility: hidden;
+	top: -150px;
+}
+
 header nav ul li a:hover {
 	background: var(--secondary-color);
 	color: var(--primary-color);
@@ -107,15 +117,15 @@ header nav ul li a:hover {
 footer {
 	display: flex;
 	justify-content: space-between;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	background: var(--primary-color);
 	width: 100%;
-	padding: 25px 35px;
+	padding: 10px 5px;
 }
 
 footer h2 {
 	color: var(--secondary-color);
-	font-size: 30px;
+	font-size: .5em;
 	margin: 0;
 }
 
@@ -154,7 +164,7 @@ section {
 	background-size: cover;
 	background-position: center;
 	align-items: flex-start;
-	background-attachment: fixed;
+	background-attachment: fixed;	
 	background-position: 80%;
 	background-color: var(--color-block-text);
 }
@@ -593,7 +603,7 @@ q {
 
 	footer h2,
 	footer div {
-		text-align: center;
+		text-align: right;
 		width: 100%;
 	}
 
