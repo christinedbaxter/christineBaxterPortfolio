@@ -40,3 +40,29 @@ window.addEventListener('scroll', function() {
     header.classList.remove('sticky');
   }
 });
+
+window.addEventListener('DOMContentLoaded', () => {
+    const filterButtons = document.querySelectorAll('#filter li');
+    const projectCards = document.querySelectorAll('.card');
+  
+    // Filter projects when a filter button is clicked
+    filterButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const filter = button.dataset.filter;
+  
+        // Remove 'active' class from all buttons
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+  
+        // Add 'active' class to the clicked button
+        button.classList.add('active');
+  
+        // Show/hide project cards based on the filter
+        projectCards.forEach(card => {
+          if (filter === 'all' || card.classList.contains(filter)) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    })});

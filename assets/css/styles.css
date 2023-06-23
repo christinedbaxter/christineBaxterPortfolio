@@ -55,6 +55,27 @@ header h1 a {
 	align-content: center;
 }
 
+#filter {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  #filter li {
+    cursor: pointer;
+    padding: 5px 10px;
+    background-color: #ccc;
+    border-radius: 5px;
+  }
+  
+  #filter li.active {
+    background-color: #999;
+    color: white;
+  }
+
 header nav {
 	
 	display: flex;
