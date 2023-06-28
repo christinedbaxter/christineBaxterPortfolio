@@ -58,23 +58,31 @@ header h1 a {
 #filter {
     list-style-type: none;
     padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
+    margin: 15px auto;
+	width: 60%;
+    display: block;	
+	text-align: center;
+	align-items: center;    
     gap: 10px;
-  }
-  
-  #filter li {
-    cursor: pointer;
-    padding: 5px 10px;
-    background-color: #ccc;
-    border-radius: 5px;
-  }
-  
-  #filter li.active {
-    background-color: #999;
-    color: white;
-  }
+}
+
+#filter li {
+cursor: pointer;
+padding: 5px 10px;
+background-color: #ccc;
+border-radius: 5px;
+}
+
+#filter li.active {
+background-color: #999;
+color: white;
+}
+
+.verticalFilterMenu {
+display: flex;
+list-style-type: none;
+padding: 10px;	
+}
 
 header nav {
 	
@@ -142,17 +150,21 @@ footer {
 	background: var(--primary-color);
 	width: 100%;
 	padding: 10px 5px;
+	font-size: x-small;
 }
 
 footer h2 {
 	color: var(--secondary-color);
+	color: var(--secondary-color);
+	font-size: .5em;
+	color: var(--secondary-color);	
 	font-size: .5em;
 	margin: 0;
 }
 
 footer div {
 	line-height: 1.5;
-	text-align: right;
+	text-align: right;	
 }
 
 footer a {
@@ -232,7 +244,7 @@ section {
 	background: var(--primary-color);
 	display: flex;
 	flex-flow: row wrap;
-	align-content: center;
+	align-content: stretch;
 }
 
 .content-part {	
@@ -317,83 +329,6 @@ q {
 	font-style: italic;
 }
 
-.classInfo {
-	margin: 0;
-	padding: 1ch;
-}
-
-/* Style the button that is used to open and close the collapsible content */
-.collapsible {
-	display: block;
-	background-color: var(--color-block-text);
-	color: var(--tertiary-color);
-	cursor: pointer;
-	padding: 12px;
-	width: 100%;
-	border: none;
-	text-align: left;
-	outline: none;
-	font-size: large;
-}
-
-/* Style the collapsible content. Note: hidden by default */
-.classDetail {
-	font-size: medium;
-	padding: 0 12px;
-	display: none;
-	overflow: hidden;
-	background-color: #f1f1f1;
-}
-
-.classDetail-content {
-	display: grid;
-	grid-template-columns: 75% 25%;
-}
-
-.classDetail h4 {
-	background-color: var(--color-block-text);
-	color: var(--tertiary-color);
-	width: 100%;
-	height: 30px;
-	text-align: center;
-	padding-top: 5px;
-}
-
-.classDetail-content h5 {
-	font-size: medium;
-	font-weight: normal;
-	text-align: left;
-	padding: 0.25ch;
-	text-decoration: underline;
-}
-
-.classDetail ol {
-	padding: 0.5ch;
-	margin-left: 2ch;
-	text-align: left;
-}
-
-.classDetail p {
-	padding: 0.5ch;
-	text-align: left;
-}
-
-.classDetail-files a {
-	text-decoration: none;
-}
-
-.collapsible:after {
-	content: "\02795"; /* Unicode character for "plus" sign (+) */
-	font-size: 13px;
-	color: #777;
-	float: left;
-	margin-left: 5px;
-}
-
-.active:after {
-	content: "\2796"; /* Unicode character for "minus" sign (-) */
-}
-
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active,
 .collapsible:hover {
@@ -403,25 +338,28 @@ q {
 .card-container {
 	display: flex;
 	flex-flow: row wrap;
-	gap: 3rem;
-	padding-top: 3.5rem;
+	gap: 4rem 2em;
+	padding-top: 3rem;
 	align-items: center;
 	justify-content: space-evenly;
+	justify-content: space-evenly;
+	/* background: linear-gradient(45deg, #fbda61, #ff5acd); */
+	justify-content: space-evenly;	
 	/* background: linear-gradient(45deg, #fbda61, #ff5acd); */
 }
 
  .card-container .card {
 	position: relative;
-	width: 325px;
-	height: 175px;
+	width: 225px;
+	height: 125px;
 	background: #fff;
 	border-radius: 20px;
-	box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+	box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);	
 	transition: 0.5s;
 }
 
 .card:hover {
-	height: 400px;
+	height: 325px;
 }
 
 .card-container .imgBx {
@@ -429,8 +367,8 @@ q {
 	left: 50%;
 	top: -50px;
 	transform: translateX(-50%);
-	width: 150px;
-	height: 150px;
+	width: 130px;
+	height: 130px;
 	background: #fff;
 	border-radius: 20px;
 	box-shadow: 0 15px 50px rgba(0, 0, 0, 0.35);
@@ -439,8 +377,9 @@ q {
 }
 
 .card:hover .imgBx {
-	width: 250px;
-	height: 250px;
+	width: 350px;
+	height: 200px;
+	z-index: 2;
 }
 
 .imgBx img {
@@ -458,7 +397,7 @@ q {
 	height: 100%;
 	display: flex;
 	justify-content: center;
-	align-items: flex-end;
+	align-items: center;
 	overflow: hidden;
 }
 
@@ -467,24 +406,27 @@ q {
 	text-align: center;
 	width: 100%;
 	transition: 0.5s;
-	transform: translateY(110px);
+	transform: translateY(98px);
 }
 
 .card:hover .content .details {
-	transform: translateY(0px);
+	transform: translateY(4rem);
 }
 
 .card .content .details h3 {
 	font-size: 1.25em;
-	font-weight: 600;
-	color: #555;
-	line-height: 1.2em;
+	font-weight: 450;
+	color: var(--secondary-color);	
+	line-height: 2rem;
+	box-shadow: 0 15px 50px rgba(0, 0, 0, 0.35);
+	border-radius: 5px;
+	text-shadow: 2px 2px 5px var(--secondary-color);	
 }
 
 .card .content .details h3 span {
 	font-size: 0.75em;
 	font-weight: 500;
-	opacity: 0.5;
+	opacity: 0.8;
 }
 
 .card .content .details .data {
@@ -503,7 +445,7 @@ q {
 .card .content .details .data h4 span {
 	font-size: 0.85em;
 	font-weight: 400;
-	opacity: 0.5;
+	opacity: 0.8;
 }
 
 .card .content .details .actionBtn {
@@ -512,21 +454,26 @@ q {
 }
 
 .card .content .details .actionBtn button {
-	padding: 10px 20px;
-	border-radius: 5px;
+	padding: 10px;
+	font-weight: lighter;
+	font-size: 1em;
 	border: none;
 	outline: none;
-	font-size: 1em;
-	font-weight: 500;
-	background:#ff5f95;
-	color: #fff;
+	text-shadow: 0 0 10px var(--primary-color);
+	box-shadow: inset;
+	background: var(--secondary-color);
+	color: var(--primary-color);
+	border-radius: 5px;
+	text-decoration: none;
+	align-self: center;
 	cursor: pointer;
 }
 
 .card .content .details .actionBtn button:nth-child(2) {
-	border: 1px solid #999;
-	color: #999;	
-	background: #fff;
+	border: 1.5px solid var(--secondary-color);
+	color: var(--secondary-color);	
+	background: var(--primary-color);
+	
 }
 
 .contactList {

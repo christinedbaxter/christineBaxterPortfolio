@@ -79,8 +79,8 @@ This website serves as a showcase of my skills, talents, and projects to potenti
 
 ## Deployment
 
-- Live Application: [Live URL](link-to-live-url)
-- GitHub Repository: [GitHub Repository URL](link-to-github-repo)
+- Live Application: [Live URL](https://christinedbaxter.github.io/christineBaxterPortfolio/)
+- GitHub Repository: [GitHub Repository URL](https://github.com/christinedbaxter/christineBaxterPortfolio)
 
 ## License
 
