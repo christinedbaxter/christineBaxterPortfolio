@@ -153,8 +153,6 @@ header nav ul li a:hover {
 	border-color: var(--secondary-color);
 }
 
-
-
 footer {
 	display: flex;
 	justify-content: space-between;
@@ -178,6 +176,23 @@ footer a {
 	color: var(--secondary-color);
 }
 
+section {
+	padding: 5px;
+}
+
+.flex-row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.flex-col {
+	display: flex;
+	flex-direction: column;
+	gap: .25rem;
+	flex: 1;
+}
+
 .content {
 	background: var(--primary-color);
 	margin: 0 auto;
@@ -188,3 +203,24 @@ footer a {
 	align-content: space-around;
 	justify-content: space-between;
 }
+
+.box1 {
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	grid-row-end: 5;
+}
+
+.content h2 {
+	text-align: right;
+	font-size: xx-large;
+	padding-right: 10px;
+}
+
+.content-text {
+	background: var(--primary-color);
+	display: flex;
+	flex-flow: row wrap;
+	align-content: stretch;
+}
+
