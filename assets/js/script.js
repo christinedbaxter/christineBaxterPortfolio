@@ -1,15 +1,55 @@
-// Add click event listener using event delegation
-document.addEventListener('click', function (event) {
-  if (event.target.classList.contains('collapsible')) {
-    event.target.classList.toggle('active');
-    var content = event.target.nextElementSibling;
-    if (content.style.display === 'block') {
-      content.style.display = 'none';
+// // Add click event listener using event delegation
+// document.addEventListener('click', function (event) {
+//   if (event.target.classList.contains('collapsible')) {
+//     event.target.classList.toggle('active');
+//     var content = event.target.nextElementSibling;
+//     if (content.style.display === 'block') {
+//       content.style.display = 'none';
+//     } else {
+//       content.style.display = 'block';
+//     }
+//   }
+// });
+
+let coll = document.getElementsByClassName("collapsible");
+for (let i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        let content = this.nextElementSibling;
+        if (content.style.display === "block") {
+            content.style.display = "none";
+        } else {
+            content.style.display = "block";
+        }
+    });
+}
+
+// When a collapsible is clicked...
+coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    let content = this.nextElementSibling;
+    if (content.style.display === "block") {
+        content.style.display = "none";
+        // Remove from localStorage when the section is collapsed
+        localStorage.removeItem(this.id);
     } else {
-      content.style.display = 'block';
+        content.style.display = "block";
+        // Add to localStorage when the section is expanded
+        localStorage.setItem(this.id, 'expanded');
     }
-  }
 });
+
+// When the page is loaded...
+window.onload = function() {
+    for (let i = 0; i < coll.length; i++) {
+        if (localStorage.getItem(coll[i].id) == 'expanded') {
+            coll[i].classList.add("active");
+            let content = coll[i].nextElementSibling;
+            content.style.display = "block";
+        }
+    }
+}
+
 
 // Add smooth scrolling to anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
