@@ -180,7 +180,6 @@ header nav {
 	}
 	
 	& ul li a {
-		z-index: 1;
 		padding: 10px 10px;
 		font-weight: medium;
 		font-size: 1.65vw;
