@@ -5,26 +5,42 @@ let activeProjectCard = null;
 // Get the required elements from the DOM
 const projectTypeSection = document.getElementById('projTypeName');
 const projectTypeToggle = document.getElementById('projTypeToggle');
-const projectCards = document.getElementsByClassName('card');
-const backButton = document.getElementById('backButton');
+const projectCards = document.getElementsByClassName('card-container');
 
 // Function to expand/collapse Data Analytics section
 function toggleProjectTypes() {
     isProjectTypeExpanded = !isProjectTypeExpanded;
     projectTypeSection.classList.toggle('expanded', isProjectTypeExpanded);
+
+    // Should be null because we haven't modified the history stack yet
+    console.log("History.state before pushState: ", history.state);
+    
+    // Store the current state in history
+    history.pushState({ isProjectTypeExpanded: isProjectTypeExpanded, activeProjectCard: activeProjectCard }, "");
 }
 
 // Function to handle project card click
 function handleProjectCardClick(cardIndex) {
     activeProjectCard = cardIndex;
     // Perform necessary actions when a project card is clicked
+
+    // Store the current state in history
+    history.pushState({ isProjectTypeExpanded: isProjectTypeExpanded, activeProjectCard: activeProjectCard }, "");
+     // Now state has a value.
+console.log("History.state after pushState: ", history.state);
 }
 
 // Function to restore previous state
-function restorePreviousState() {
+function restorePreviousState(state) {
+    // Set variables based on state
+    if(state) {
+        isProjectTypeExpanded = state.isProjectTypeExpanded;
+        activeProjectCard = state.activeProjectCard;
+    }
+
     // Expand Data Analytics section if it was previously expanded
     projectTypeSection.classList.toggle('expanded', isProjectTypeExpanded);
-    
+
     // Scroll or highlight the active project card if it exists
     if (activeProjectCard !== null) {
     projectCards[activeProjectCard].scrollIntoView({ behavior: 'smooth' });
@@ -40,5 +56,7 @@ for (let i = 0; i < projectCards.length; i++) {
     projectCards[i].addEventListener('click', () => handleProjectCardClick(i));
 }
 
-// Event listener for back button
-backButton.addEventListener('click', restorePreviousState);
+// Event listener for popstate (back/forward navigation)
+window.addEventListener('popstate', (event) => {
+    restorePreviousState(event.state);
+});

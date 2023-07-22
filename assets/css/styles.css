@@ -77,7 +77,6 @@ header nav ul li {
 }
 
 header nav ul li a {
-	z-index: 1;
 	padding: 10px 10px;
 	font-weight: lighter;
 	font-size: 1.5vw;
@@ -554,6 +553,23 @@ q {
 	height: 100%;
 }
 
+.iframe-container {
+	position: relative;
+	width: 100%;
+	padding-bottom: 56.25%;
+	/* This ratio will make the iframe display in 16:9 aspect ratio. */
+	height: 0;
+	overflow: auto;
+
+	& iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+}
+
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
 	header {
@@ -614,6 +630,22 @@ q {
 	.resume {
 		margin: 1ch;
 	}
+
+	.iframe-container {
+		position: relative;
+		width: 100%;
+		padding-bottom: 75%;
+		/* This ratio will make the iframe display in 4:3 (standard) aspect ratio. */
+		height: 0;
+
+		& iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+	}
 }
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
@@ -650,6 +682,22 @@ q {
 
 	.content-text ul li a {
 		font-size: medium;
+	}
+
+	.iframe-container {
+		position: relative;
+		width: 100%;
+		padding-bottom: 56.25%;
+		/* This ratio will make the iframe display in 16:9 aspect ratio. */
+		height: 0;
+
+		& iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
 	}
 }
 
@@ -719,5 +767,21 @@ q {
 	.classDetail-content {
 		display: flex;
 		flex: 1;
+	}
+
+	.iframe-container {
+		position: relative;
+		width: 100%;
+		padding-bottom: 46.25%;
+		/* This ratio will make the iframe display in 16:9 aspect ratio. */
+		height: 0;
+
+		& iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
 	}
 }
