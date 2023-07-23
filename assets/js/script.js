@@ -40,6 +40,17 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
+window.addEventListener("popstate", (event) => {
+  console.log(
+    `location: ${document.location}, state: ${JSON.stringify(event.state)}`,
+  );
+});
+
+// Event listener for popstate (back/forward navigation)
+window.addEventListener('popstate', (event) => {
+    restorePreviousState(event.state);
+});
+
 // let coll = document.getElementsByClassName("collapsible");
 // for (let i = 0; i < coll.length; i++) {
 //     coll[i].addEventListener("click", function() {

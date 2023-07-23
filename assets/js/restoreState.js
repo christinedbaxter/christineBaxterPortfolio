@@ -5,7 +5,7 @@ let activeProjectCard = null;
 // Get the required elements from the DOM
 const projectTypeSection = document.getElementById('projTypeName');
 const projectTypeToggle = document.getElementById('projTypeToggle');
-const projectCards = document.getElementsByClassName('card-container');
+const projectCards = document.getElementsByClassName('card');
 
 // Function to expand/collapse Data Analytics section
 function toggleProjectTypes() {
@@ -55,8 +55,3 @@ projectTypeToggle.addEventListener('click', toggleProjectTypes);
 for (let i = 0; i < projectCards.length; i++) {
     projectCards[i].addEventListener('click', () => handleProjectCardClick(i));
 }
-
-// Event listener for popstate (back/forward navigation)
-window.addEventListener('popstate', (event) => {
-    restorePreviousState(event.state);
-});
