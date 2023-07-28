@@ -100,11 +100,11 @@
           </div>
           <div class="content-text">
             <div id="myProjectsRow" class="content-part flex-col myProjectsId">
-              <div class="projType" id="projType-Analytics">
+              <div class="projType expandable" id="projType-Analytics">
                 <button type="button" class="collapsible">Data Analytics</button>
                 <div class="projDetail">
-                  <div class="card-container">
-                    <div class="card">
+                  <div class="card-container" id="dataAnalytics">
+                    <div class="card" id="excelBusIntel">
                       <div class="content">
                         <div class="details">
                           <h3>Excel Business Intelligence Analysis</h3>
@@ -113,24 +113,25 @@
                           </div>
                           <div class="actionBtn">
                             <button type="button"
-                              onclick="window.location.href='./projects/BIAM500-Lab1-Dashboard.png';">Dashboard</button>
+                              onclick="window.open('./projects/BIAM500-Lab1-Dashboard.png', '_blank');">Dashboard</button>
                             <button type="button"
-                              onclick="window.location.href='./projects/BIAM500-Lab1.html';">Detail</button>
+                              onclick="window.open('./projects/BIAM500-Lab1.html', '_blank');">Detail
+                            </button>
                           </div>
                         </div>
                       </div>
                       <div class="imgBx">
-                        <img src="./assets/images/excelJeans.jpg"" alt=" Weather map in space." />
+                        <img src="./assets/images/excelJeans.jpg"" alt="Microsoft Excel program icon in back pocket of a pair of jeans" />
                       </div>
                     </div>                
                   </div>
                 </div>
               </div>
-              <div class="projType" id="projType-fullStackDev">
+              <div class="projType expandable" id="projType-fullStackDev">
                 <button type="button" class="collapsible">Full Stack Web Development</button>
                 <div class="projDetail">
-                  <div class="card-container">
-                    <div class="card">
+                  <div class="card-container" id="fullStackWebDev">
+                    <div class="card" id="weatherDashboard">
                       <div class="content">
                         <div class="details">
                           <h3>Weather Dashboard</h3>
@@ -139,8 +140,11 @@
                           </div>
                           <div class="actionBtn">
                             <button type="button"
-                              onclick="window.location.href='https://christinedbaxter.github.io/myWeatherDashboard/';">Website</button>
-                            <button type="button">Detail</button>
+                              onclick="window.open('https://christinedbaxter.github.io/myWeatherDashboard/', '_blank');">Website
+                            </button>
+                            <button type="button"
+                                onclick="window.open('https://github.com/christinedbaxter/myWeatherDashboard#readme', '_blank');">Detail
+                            </button>
                           </div>
                         </div>
                       </div>
@@ -148,7 +152,7 @@
                         <img src="./assets/images/weatherStationBg.jpeg"" alt=" Weather map in space." />
                       </div>
                     </div>
-                    <div class="card">
+                    <div class="card" id="codeQuiz">
                       <div class="content">
                         <div class="details">
                           <h3>Code Quiz</h3>
@@ -157,8 +161,11 @@
                           </div>
                           <div class="actionBtn">
                             <button type="button"
-                              onclick="window.location.href='https://christinedbaxter.github.io/code-quiz/';">Website</button>
-                            <button type="button">Detail</button>
+                              onclick="window.open('https://christinedbaxter.github.io/code-quiz/', '_blank');">Website
+                            </button>
+                            <button type="button"
+                              onclick="window.open('https://github.com/christinedbaxter/code-quiz#readme', '_blank');">Detail
+                            </button>
                           </div>
                         </div>
                       </div>
@@ -166,7 +173,7 @@
                         <img src="./assets/images/quiz.jpeg" alt="Bullhorn making announcement for Quiz using  thought bubble." />
                       </div>
                     </div>
-                    <div class="card">
+                    <div class="card" id="dinnerMovie">
                       <div class="content">
                         <div class="details">
                           <h3>Dinner and a Movie</h3>
@@ -175,8 +182,11 @@
                           </div>
                           <div class="actionBtn">
                             <button type="button"
-                              onclick="window.location.href='https://christinedbaxter.github.io/recipe-maker/';">Website</button>
-                            <button type="button">Detail</button>
+                              onclick="window.open('https://christinedbaxter.github.io/recipe-maker/', '_blank');">Website
+                            </button>
+                            <button type="button" 
+                              onclick="window.open('https://github.com/christinedbaxter/recipe-maker#readme', '_blank');">Detail
+                            </button>
                           </div>
                         </div>
                       </div>
@@ -185,7 +195,7 @@
                           alt="Dinner and a Movie app logo containing movie reel with cup of coffee, ice cream cone, chicken leg, hamburger, doughnut, and slice of pizza showing team name as 'The A Team'." />
                       </div>
                     </div>
-                    <div class="card">
+                    <div class="card" id="passGenerator">
                       <div class="content">
                         <div class="details">
                           <h3>Password Generator</h3>
@@ -194,8 +204,11 @@
                           </div>
                           <div class="actionBtn">
                             <button type="button"
-                              onclick="window.location.href='https://christinedbaxter.github.io/password-generator/';">Website</button>
-                            <button type="button">Detail</button>
+                              onclick="window.open('https://christinedbaxter.github.io/password-generator/', '_blank');">Website
+                            </button>
+                            <button type="button" 
+                              onclick="window.open('https://github.com/christinedbaxter/password-generator#readme', '_blank');">Detail
+                            </button>
                           </div>
                         </div>
                       </div>
@@ -203,7 +216,7 @@
                         <img src="./assets/images/ePadlock.jpeg" alt="Picture of a locked padlock with a technology background." />
                       </div>
                     </div>
-                    <div class="card">
+                    <div class="card" id="taskinatorApp">
                       <div class="content">
                         <div class="details">
                           <h3>Taskinator</h3>
@@ -212,8 +225,11 @@
                           </div>
                           <div class="actionBtn">
                             <button type="button"
-                              onclick="window.location.href='https://christinedbaxter.github.io/taskinator/';">Website</button>
-                            <button type="button">Detail</button>
+                              onclick="window.open('https://christinedbaxter.github.io/taskinator/', '_blank');">Website
+                            </button>
+                            <button type="button" 
+                              onclick="window.open('https://github.com/christinedbaxter/taskinator#readme', '_blank');">Detail
+                            </button>
                           </div>
                         </div>
                       </div>
@@ -221,7 +237,7 @@
                         <img src="./assets/images/taskListChecked.jpeg" alt="3D Character finishing tasks" />
                       </div>
                     </div>
-                    <div class="card">
+                    <div class="card" id="workDayScheduler">
                       <div class="content">
                         <div class="details">
                           <h3>Work Day Scheduler</h3>
@@ -230,8 +246,11 @@
                           </div>
                           <div class="actionBtn">
                             <button type="button"
-                              onclick="window.location.href='https://christinedbaxter.github.io/work-day-scheduler/';">Website</button>
-                            <button type="button">Detail</button>
+                              onclick="window.open('https://christinedbaxter.github.io/work-day-scheduler/', '_blank');">Website
+                            </button>
+                            <button type="button" 
+                              onclick="window.open('https://github.com/christinedbaxter/work-day-scheduler#readme', '_blank');">Detail
+                            </button>
                           </div>
                         </div>
                       </div>
