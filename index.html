@@ -6,33 +6,26 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Portfolio - Christine Baxter</title>
         <link rel="stylesheet" href="./assets/css/styles.css">
+        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 
     <body>
       <header>
-          <h1>
-              <a href="/">
-                Christine Baxter
-              </a>
-          </h1>
-
-        <!-- navigation -->
-          <nav>
-            <ul>
-              <li>
-                <a href="#aboutMe">About Me</a>
-              </li>
-              <li>
-                <a href="#myProjects">Projects</a>
-              </li>
-              <li>
-                  <a href="#contactMe">Contact Me</a>
-              </li>
-              <li>
-                  <a href="#myResume">Resume</a>
-              </li>
-            </ul>
-          </nav>
+        <div class="myName">
+          <h1>Christine Baxter</h1>
+        </div>
+        
+        <div class="topnav" id="myTopnav">
+          <div><a href="./index.html" class="activeNav">Home</a></div>
+          <div><a href="#aboutMe">About Me</a></div>
+          <div><a href="#myProjects">Projects</a></div>
+          <div><a href="#contactMe">Contact Me</a></div>
+          <div><a href="#myResume">Resume</a></div>
+          <div><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars">Menu</i></a>
+          </div>
+        </div>
       </header>
 
       <!-- hero/jumbotron -->

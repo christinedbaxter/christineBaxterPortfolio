@@ -27,6 +27,16 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
 //Add click event listener using event delegation
 document.addEventListener('click', function (event) {
   if (event.target.classList.contains('collapsible')) {

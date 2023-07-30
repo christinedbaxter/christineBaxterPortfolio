@@ -184,7 +184,7 @@ header nav {
 		align-items: center;
 		justify-content: center;
 		padding: 5px 5px;
-		width: 125px;
+		width: 105px;
 		white-space: normal;
 		min-height: 35px;
 		line-height: 1.2;
@@ -455,6 +455,9 @@ section {
 		padding: 5px;
 		text-align: center;
 	}
+
+		header .contact-position {
+			display: none;
 }
 
 @media screen and (max-width: 575px) {
@@ -522,18 +525,88 @@ section {
 @media screen and (max-width: 575px),
 (max-width: 350px) {
 
+	header .top-row h1 {
+		display: none;
+	}
+	
 	header nav ul,
 	.section-title,
 	section,
 	.content {
 		justify-content: center;
 		font-size: medium;
-		width: 95%;
+		width: 100%;
 		padding: 5px;
-		grid-template-columns: none;
+		grid-template-columns: 2;
+		gap: 5px;
+	}
+
+	section .sectionBody {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	section .sectionBody .summaryText p {
+		text-align: center;
 	}
 
 	.degree-container {
 		grid-template-columns: 0.25fr;
+	}
+}
+
+header nav ul li {
+	width: 100px;
+	/* Set a specific width; adjust as needed */
+	text-align: center;
+	/* Center-align the text */
+	white-space: normal;
+	/* Allow the text to wrap to the next line */
+	min-height: 40px;
+	/* Set a minimum height */
+	line-height: 1.2;
+	/* Adjust the line-height */
+	padding: 5px;
+	/* Add padding for spacing */
+}
+
+/* Styling for the hamburger icon */
+.hamburger-menu {
+	display: none;
+	/* Hide by default */
+	flex-direction: column;
+	gap: 5px;
+}
+
+.bar {
+	width: 25px;
+	height: 3px;
+	background: var(--tertiary-color);
+}
+
+/* Styling for the mobile navigation menu */
+.mobile-nav {
+	display: none;
+	/* Hide by default */
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 200px;
+	/* Adjust as needed */
+	height: 100%;
+	background: var(--primary-color);
+	overflow-y: scroll;
+}
+
+.mobile-nav.active {
+	display: flex;
+	/* Show when active */
+}
+
+/* Media query to show the hamburger menu on small screens */
+@media screen and (max-width: 768px) {
+	.hamburger-menu {
+		display: flex;
+		/* Show on small screens */
 	}
 }
