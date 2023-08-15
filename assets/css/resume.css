@@ -61,11 +61,15 @@ h6 {
 /* Path: christineBaxterPortfolio\assets\css\resume.css */
 header {
 	display: flex;
-	flex-direction: column;
 	justify-content: space-between;
-	align-items: stretch;
-	padding: 15px;
-	background: transparent url("../images/dataAnalyticsBackGround.png") center / cover no-repeat fixed;
+	flex-wrap: wrap;
+	padding: 15px 15px;
+	background-color: transparent;
+	background-image: url("../images/dataAnalyticsBackGround.png");
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-position: center;
 	z-index: 9999;
 }
 
@@ -75,25 +79,110 @@ header {
 	top: 0;
 }
 
-header .top-row {
-	display: flex;
-	justify-content: space-between;
-}
-
-header h1 {
+header .myName {
 	font-weight: bold;
-	width: 215px;
-	height: 95px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	margin: 0;
-	padding: 3px;
-	font-size: 34px;
+	padding: 5px;
+	font-size: 1rem;
 	text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 	box-shadow: inset;
 	background-color: var(--color-block-text);
 	border-radius: 5px;
+
+	& h1 {
+		width: 215px;
+		height: 60px;
+		align-items: center;
+		justify-content: center;
+	}
+
+		& h1 a {
+			text-decoration: none;
+			color: var(--primary-color);
+		}
+
+			& a:hover {
+				background: var(--secondary-color);
+				color: var(--primary-color);
+				border: var(--color-block-text) solid 3px;
+				border-width: 3px;
+				transform: scale3d(1.1, 1, 0.5);
+			}
+}
+
+header .icon {
+	display: none
+}
+
+header .topnav {
+	overflow: hidden;
+	display: flex;
+	flex-flow: row wrap;
+	margin-top: 5px;
+	margin-bottom: 5px;
+
+	& div {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		margin: 5px;
+		align-items: center;
+		padding: 0px 10px;
+	}
+
+	& a {
+		font-weight: lighter;
+		text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+		height: auto;
+		width: 125px;
+		box-shadow: inset;
+		background: var(--primary-color);
+		color: var(--secondary-color);
+		border-radius: 15px;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+	}
+
+	& a[data-hs-anchor="true"] {
+		display: block;
+		position: relative;
+		visibility: hidden;
+		top: -150px;
+	}
+
+	& a:hover {
+		background: var(--secondary-color);
+		color: var(--primary-color);
+		border: var(--color-block-text) solid 3px;
+		border-width: 3px;
+		transform: scale3d(1.1, 1, 0.5);
+	}
+
+	& a.activeNav {
+		text-decoration: none;
+		background-color: var(--color-block-text);
+		color: var(--tertiary-color);
+		align-content: center;
+	}
+}
+
+header .contact-position {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--tertiary-color);
+	color: var(--primary-color);
+	text-shadow: 0 0 10px var(--tertiary-color)(0, 0, 0, 0.5);
+	margin-top: 15px;
+
+	& div {
+			justify-content: space-between;
+			margin: 5px;
+			align-items: center;
+			padding: 0px 10px;
+	}
 
 	& a {
 		color: var(--primary-color);
@@ -217,29 +306,7 @@ header nav {
 	}
 }
 
-header .contact-position {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	background-color: var(--tertiary-color);
-	color: var(--primary-color);
-	text-shadow: 0 0 10px var(--tertiary-color)(0, 0, 0, 0.5);
-	margin-top: 15px;
 
-	& a {
-		color: var(--primary-color);
-		text-decoration: none;
-	}
-
-	& a:hover {
-		background: var(--secondary-color);
-		color: var(--primary-color);
-		border: var(--color-block-text) solid 3px;
-		border-width: 2px;
-		border-radius: 4px;
-		transform: scale3d(1.1, 1, 0.5);
-	}
-}
 
 footer {
 	display: flex;
@@ -305,7 +372,9 @@ section {
 	background: var(--color-block-text);
 
 	& h2 {
+		display: flex;
 		text-align: left;
+		justify-content: stretch;
 		font-size: xx-large;
 		padding-right: 10px;
 		margin: 0;
@@ -525,12 +594,64 @@ section {
 @media screen and (max-width: 575px),
 (max-width: 350px) {
 
-	header .top-row h1 {
+	.material-symbols-outlined {
+		font-variation-settings:
+			'FILL' 0,
+			'wght' 400,
+			'GRAD' 0,
+			'opsz' 48
+	}
+
+	header div.headerLine {
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 5px;
+
+		& .myName {
+			border-radius: 10px 0px 0px 10px;
+		}
+
+		& h1 {
+			font-size: 1.75rem;
+		}
+
+		& .icon {
+			display: flex;
+			width: 30px;
+			background: var(--color-block-text);
+			justify-content: center;
+			align-self: stretch;
+			align-items: center;
+			border-radius: 0 10px 10px 0px;
+			border-left: var(--tertiary-color) 1px solid;
+			font-weight: bold;
+			padding: 5px;
+			font-size: 18px;
+			text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+		}
+	}
+
+	header .topnav {
+		justify-content: center;
+	}
+
+	header .topnav div {
 		display: none;
 	}
-	
-	header nav ul,
-	.section-title,
+
+	header .topnav.responsive div {
+		position: relative;
+		display: flex;
+		flex-flow: row wrap;
+		gap: .5rem;
+		justify-items: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	.sectionTitle,
 	section,
 	.content {
 		justify-content: center;
@@ -541,11 +662,34 @@ section {
 		gap: 5px;
 	}
 
-	section .sectionBody {
-		flex-direction: column;
-		align-items: center;
+	.qrCode {
+		display: none;
 	}
 
+	.skills {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: stretch;
+
+		& div {
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: center;
+		}
+
+		& div .sectionTitle {
+			justify-content: flex-start;
+		}
+	}
+
+	.project-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: stretch;
+	}
+	
 	section .sectionBody .summaryText p {
 		text-align: center;
 	}
