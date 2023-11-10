@@ -237,11 +237,19 @@ section {
 	height: auto;
 }
 
-.proPic {
-	width: 225px;
+.picContainer {
+	display: flex;
+	flex-flow: column nowrap;		
+	align-items: flex-end;
+	padding-right: 5px;
+}
+
+.proPic {	
+	align-items: first baseline;
+	width: 120px;
 	height: auto;
 	/* flex: auto 1; */
-	padding-right: 5px;
+	padding-right: 5px;	
 	padding-top: 0.7ch;
 }
 
