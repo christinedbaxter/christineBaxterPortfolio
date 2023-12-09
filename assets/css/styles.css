@@ -610,10 +610,12 @@ q {
 		text-shadow: 0 0 10px rgb(0 0 0 / 100%);
 	}
 
-	footer h2,
-	footer div {
+	footer .leftFooter {
+		text-align: left;		
+	}
+
+	footer .rightFooter {
 		text-align: right;
-		width: 100%;
 	}
 
 	.hero-subtitle,
